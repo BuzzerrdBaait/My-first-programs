@@ -41,11 +41,11 @@ print(TOKEN)
 
 def main():
     reddit = praw.Reddit(
-        client_id="iDvUreY4u7mKAAbJ7vNawA",
-        client_secret="Yp0IZN6aM3WivX0LaQ8i-7OYlfSRig",
-        password="Weediscool0420",
+        client_id="iDvUrEXAMPLESbJ7vNawA",
+        client_secret="Yp0IEXAMPLESfSRig",
+        password="WeEXAMPLES20",
         user_agent="LMGTFY (by u/BreakBitchesBacks)",
-        username="BreakBitchesBacks",
+        username="BrEXAMPLESBacks",
        
     )
 
