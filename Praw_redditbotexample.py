@@ -44,7 +44,7 @@ def main():
         client_id="iDvUrEXAMPLESbJ7vNawA",
         client_secret="Yp0IEXAMPLESfSRig",
         password="WeEXAMPLES20",
-        user_agent="LMGTFY (by u/BreakBitchesBacks)",
+        user_agent="LMGTFY (by u/REDDITUSERNAMEs)",
         username="BrEXAMPLESBacks",
        
     )
