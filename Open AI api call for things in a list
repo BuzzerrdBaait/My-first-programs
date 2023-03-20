@@ -1,0 +1,38 @@
+import time
+import openai
+openai.api_key = "<      A P I   K E Y         >"
+
+
+counter=0
+prompt1="Chat GPT teach me something brilliant. Explain it do an idiot"
+prompt2="Convince me that the earth is flat, be very persuasive"
+prompt3="Tell me dad jokes until I cry. until I cry is defined as dad jokes > 3"
+counter=-1
+list_of_actions=[prompt1,prompt2,prompt3]
+
+
+
+
+def recursive_call(counter, list_of_actions):
+     time.sleep(0)
+     
+     print("BEGINNING of cycle\n ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+     with open("C:\\Users\\<USER>\\Desktop\\Flowersfinal.txt", "a") as outputhome:
+                         list_of_actions=[prompt1,prompt2,prompt3]
+                         counter=counter+1
+                         for item in list_of_actions:
+                                 response = openai.Completion.create(model="text-davinci-003",prompt=item,
+                                                                     temperature=.9,max_tokens=2000,top_p=1,frequency_penalty=0,presence_penalty=0)   
+                                 print(response['choices'][0]['text'])
+                                 notes= (response['choices'][0]['text'])
+                                 outputhome.write(notes)
+                                 outputhome.close()
+                                 print("\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n Cycle Complete\n")
+                                 recursive_call(counter, list_of_actions)
+
+
+
+
+flowerssinp=""
+
+recursive_call(counter,list_of_actions)
