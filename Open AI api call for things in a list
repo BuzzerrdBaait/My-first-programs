@@ -3,11 +3,13 @@ import openai
 openai.api_key = "<O P E N    A P I   K E Y>"
 
 
+
+
 counter=0
 prompt1="Teach me secrets about making money"
 prompt2="tell me secrets about HTML or CSS"
 prompt3="Tell me secrets about Python"
-counter=0
+
 list_of_actions=[prompt1,prompt2,prompt3]
 
 def response_main(outputhome,prompt):
@@ -29,7 +31,7 @@ def recursive_call(counter, list_of_actions):
      
      
      print("BEGINNING of cycle\n ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
-     with open("C:\\Users\\calca\\Desktop\\Flowersfinal.txt", "a") as outputhome:
+     with open("C:\\Path\\to\\Document\\outputhome.txt", "a") as outputhome:
                          list_of_actions=[prompt1,prompt2,prompt3]
                          
                          
